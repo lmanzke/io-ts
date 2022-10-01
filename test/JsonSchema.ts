@@ -1,7 +1,7 @@
-import * as C from 'fp-ts/lib/Const'
-import { identity } from 'fp-ts/lib/function'
-import { pipe } from 'fp-ts/lib/pipeable'
-import * as R from 'fp-ts/lib/ReadonlyRecord'
+import * as C from 'fp-ts/Const'
+import { identity } from 'fp-ts/function'
+import { pipe } from 'fp-ts/pipeable'
+import * as R from 'fp-ts/ReadonlyRecord'
 import { JSONSchema7 } from 'json-schema'
 import * as S from '../src/Schemable'
 
@@ -179,7 +179,7 @@ export const URI = 'io-ts/JsonSchema'
 
 export type URI = typeof URI
 
-declare module 'fp-ts/lib/HKT' {
+declare module 'fp-ts/HKT' {
   interface URItoKind<A> {
     readonly [URI]: JsonSchema<A>
   }

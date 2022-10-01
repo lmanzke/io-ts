@@ -2,7 +2,7 @@
  * An instance of `Schemable` for `fast-check` arbitraries that emit valid values
  */
 import * as fc from 'fast-check'
-import { identity, Refinement } from 'fp-ts/lib/function'
+import { identity, Refinement } from 'fp-ts/function'
 import * as S from '../src/Schemable'
 
 // -------------------------------------------------------------------------------------
@@ -112,7 +112,7 @@ export const URI = 'Arbitrary'
 
 export type URI = typeof URI
 
-declare module 'fp-ts/lib/HKT' {
+declare module 'fp-ts/HKT' {
   interface URItoKind<A> {
     readonly Arbitrary: Arbitrary<A>
   }

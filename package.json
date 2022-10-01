@@ -1,5 +1,5 @@
 {
-  "name": "io-ts",
+  "name": "io-ts-nap",
   "version": "2.2.18",
   "description": "TypeScript runtime type system for IO decoding/encoding",
   "main": "lib/index.js",

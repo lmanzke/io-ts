@@ -1,5 +1,5 @@
 import * as t from '../../src'
-import { either } from 'fp-ts/lib/Either'
+import { either } from 'fp-ts/Either'
 
 //
 // helpers
@@ -531,7 +531,7 @@ export function maybe<RT extends t.Any>(
 
 // ----------------
 
-import { TaskEither } from 'fp-ts/lib/TaskEither'
+import { TaskEither } from 'fp-ts/TaskEither'
 
 // tslint:disable-next-line:strict-export-declare-modifiers
 declare function withValidation<L, A>(

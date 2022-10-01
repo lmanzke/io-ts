@@ -1,5 +1,5 @@
 import * as E from '../../src/Encoder'
-import { pipe } from 'fp-ts/lib/pipeable'
+import { pipe } from 'fp-ts/pipeable'
 
 const NumberToString: E.Encoder<string, number> = {
   encode: String

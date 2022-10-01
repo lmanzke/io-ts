@@ -1,4 +1,4 @@
-import { pipe } from 'fp-ts/lib/pipeable'
+import { pipe } from 'fp-ts/pipeable'
 import * as DE from '../../src/DecodeError'
 import * as _ from '../../src/Decoder'
 import * as FS from '../../src/FreeSemigroup'
